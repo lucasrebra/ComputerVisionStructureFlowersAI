@@ -1,46 +1,45 @@
 # Prediction Model Package
 
-## Descripción
+## Description
 
-Este paquete permite la limpieza, entrenamiento y evaluación de modelos de clasificación de imágenes, especializado en la detección de flores. Fue diseñado para facilitar el proceso desde la carga de los datos hasta la obtención de un modelo entrenado y evaluado.
+This package enables the cleaning, training, and evaluation of image classification models, specialized in flower detection. It was designed to facilitate the process from data loading to obtaining a trained and evaluated model.
 
-## Instalación
+## Installation
 
-Para instalar el paquete, sigue estos pasos:
+To install the package, follow these steps:
 
 ```bash
-git clone https://tu-repositorio.git
+git clone https://your-repository.git
 cd prediction_model
 pip install .
 ```
 
-## Uso
+## Usage
 
-El paquete se puede utilizar de la siguiente manera para entrenar un modelo con tus datos de imágenes. Asegúrate de tener tus datos organizados y configurar correctamente los parámetros en `config.py`.
+The package can be used in the following way to train a model with your image data. Make sure your data is organized and the parameters in `config.py` are correctly set.
 
 ```python
 from prediction_model.training_pipeline import run_training_pipeline
 
-# Ejecuta el pipeline completo de entrenamiento
+# Run the complete training pipeline
 run_training_pipeline()
 ```
 
-## Contribuciones
+## Contributions
 
-Las contribuciones son bienvenidas y apreciadas. Si tienes sugerencias para mejorar este paquete o has encontrado un error, por favor, considera lo siguiente:
+Contributions are welcome and appreciated. If you have suggestions to improve this package or have found an error, please consider the following:
 
-- Abre un issue para discutir los cambios propuestos o reportar un error.
-- Para cambios directos, por favor, haz un fork del repositorio, haz tus cambios y envía un pull request para su revisión.
+- Open an issue to discuss proposed changes or report an error.
+- For direct changes, please fork the repository, make your changes, and send a pull request for review.
 
-Antes de enviar un pull request, asegúrate de que tu código sigue las convenciones establecidas en el proyecto y pasa todas las pruebas existentes. Además, considera añadir pruebas para nuevas funcionalidades o correcciones.
+Before submitting a pull request, make sure your code follows the conventions established in the project and passes all existing tests. Additionally, consider adding tests for new features or fixes.
 
+## Contact
 
-## Contacto
+For additional questions or inquiries about this project, please don't hesitate to contact me:
 
-Para preguntas o consultas adicionales sobre este proyecto, por favor, no dudes en contactarme:
-
-- **Nombre**: Lucas Rey Braga
-- **Correo electrónico**: lucasrebra
+- **Name**: Lucas Rey Braga
+- **Email**: lucasrebra
 - **GitHub**: [lucasrebra](https://github.com/lucasrebra)
 
-Agradecemos tu interés en este proyecto y esperamos tus contribuciones y feedback.
+We appreciate your interest in this project and look forward to your contributions and feedback.
