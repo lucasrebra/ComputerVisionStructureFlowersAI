@@ -1,0 +1,4 @@
+include README.md
+include requirements.txt
+recursive-include prediction_model/datasets *
+recursive-include prediction_model/trained_models *
