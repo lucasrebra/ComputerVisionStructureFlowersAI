@@ -45,9 +45,3 @@ TRANSFER_LEARNING_CONFIG = {
     "pooling": "avg",
     "trainable_layers": 2,
 }
-
-# Otras configuraciones globales
-GLOBAL_CONFIG = {
-    "random_state": 42,
-}
-
