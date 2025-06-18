@@ -33,7 +33,5 @@ def evaluate_model(model, test_data_path):
 
 if __name__ == "__main__":
     model = load_model(TRAINING_CONFIG["model_save_path"])
-    evaluate_model(
-        model,
-        EVALUATION_CONFIG["test_data_path"],
-    )
+    evaluate_model(model, EVALUATION_CONFIG["test_data_path"])
+
