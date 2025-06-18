@@ -2,7 +2,7 @@ import torch
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 from prediction_model.models.model_definitions import SimpleCNN
-from prediction_model.config.config import TRAINING_CONFIG
+from prediction_model.config.config import TRAINING_CONFIG, EVALUATION_CONFIG
 
 def load_model(model_path):
     model = SimpleCNN()
@@ -33,4 +33,5 @@ def evaluate_model(model, test_data_path):
 
 if __name__ == "__main__":
     model = load_model(TRAINING_CONFIG["model_save_path"])
-    evaluate_model(model, TRAINING_CONFIG["dataset_path"])  # Ajusta la ruta según necesidad
+    # Ajusta la ruta de pruebas según necesidad
+    evaluate_model(model, EVALUATION_CONFIG["test_data_path"])
