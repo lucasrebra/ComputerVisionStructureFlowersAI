@@ -1,7 +1,7 @@
 from prediction_model.datasets.data_loading import download_files_from_folder
 from prediction_model.datasets.data_cleaning import clean_dataset
 from prediction_model.models.train import train_model
-from prediction_model.evaluation.evaluate_model import evaluate_model
+from prediction_model.evaluation.evaluate_model import evaluate_model, load_model
 from prediction_model.config.config import DATA_LOADING_CONFIG, DATA_CLEANING_CONFIG, TRAINING_CONFIG, EVALUATION_CONFIG
 
 def run_training_pipeline():
@@ -19,7 +19,8 @@ def run_training_pipeline():
 
     # Paso 4: Evaluar el modelo
     print("Evaluando el modelo...")
-    evaluate_model(TRAINING_CONFIG["model_save_path"], EVALUATION_CONFIG["test_data_path"])
+    model = load_model(TRAINING_CONFIG["model_save_path"])
+    evaluate_model(model, EVALUATION_CONFIG["test_data_path"])
 
 if __name__ == "__main__":
     run_training_pipeline()

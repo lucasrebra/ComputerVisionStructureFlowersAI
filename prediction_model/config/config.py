@@ -45,3 +45,8 @@ TRANSFER_LEARNING_CONFIG = {
     "pooling": "avg",
     "trainable_layers": 2,
 }
+
+# Configuraciones para la evaluación del modelo
+EVALUATION_CONFIG = {
+    "test_data_path": os.path.join(BASE_DIR, "datasets", "test"),
+}
