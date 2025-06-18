@@ -24,6 +24,13 @@ file.
 
 ## Setup
 
+Clone this repository and change into its directory:
+
+```bash
+git clone <repo-url>
+cd ComputerVisionStructureFlowersAI
+```
+
 Create a virtual environment and install the requirements:
 
 ```bash
