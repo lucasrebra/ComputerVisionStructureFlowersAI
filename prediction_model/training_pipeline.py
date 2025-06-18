@@ -17,7 +17,7 @@ def run_training_pipeline():
     print("Iniciando el entrenamiento del modelo...")
     train_model()
 
-    # Paso 4: Evaluar el modelo
+    # Paso 4: Evaluar el modelo con los datos de prueba
     print("Evaluando el modelo...")
     model = load_model(TRAINING_CONFIG["model_save_path"])
     evaluate_model(model, EVALUATION_CONFIG["test_data_path"])

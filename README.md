@@ -24,6 +24,13 @@ file.
 
 ## Setup
 
+Clone this repository and change into its directory:
+
+```bash
+git clone <repo-url>
+cd ComputerVisionStructureFlowersAI
+```
+
 Create a virtual environment and install the requirements:
 
 ```bash
@@ -63,7 +70,8 @@ python -m prediction_model.training_pipeline
 
 ## Evaluating a Saved Model
 
-To evaluate a model stored at the path specified in `config.py`:
+To evaluate a model stored at the path specified in `config.py` using the test
+dataset defined in `EVALUATION_CONFIG`:
 
 ```bash
 python -m prediction_model.evaluation.evaluate_model
