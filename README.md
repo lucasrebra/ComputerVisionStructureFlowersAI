@@ -106,7 +106,7 @@ Before submitting a pull request, make sure your code follows the conventions es
 For additional questions or inquiries about this project, please don't hesitate to contact me:
 
 - **Name**: Lucas Rey Braga
-- **Email**: lucasrebra
+- **Email**: lucasrebra97@gmail.com
 - **GitHub**: [lucasrebra](https://github.com/lucasrebra)
 
 We appreciate your interest in this project and look forward to your contributions and feedback.
